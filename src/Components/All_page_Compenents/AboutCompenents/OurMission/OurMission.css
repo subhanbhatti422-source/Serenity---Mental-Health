@@ -1,0 +1,199 @@
+.Our-Mission{
+ max-width: 1200px;   
+ margin: auto;
+ padding: 0 40px;
+}
+
+.under-mission{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 70px;
+    height: fit-content;
+}
+
+.mission-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.mission-1 img{
+    width: 100%;
+    max-width: 380px;
+    border-radius: 27px;
+    height: auto;
+    object-fit: cover;
+}
+
+.mission-card{
+    background-color: #E1937D;
+    padding: 30px 30px;
+    margin-top: 30px;
+    border-radius: 23px;
+    width: 100%;
+}
+
+.mission-card span{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-family: font-3;
+}
+
+.mission-card p{
+    font-family: font-1;
+    font-size: 14px;
+    color: #FFFFFF;
+    max-width: 330px;
+    line-height: 25px;
+}
+
+.mission-2{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-2 img{
+    width: 100%;
+    max-width: 360px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.mission-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.mission-card-2{
+    background-color: #8E9867;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+    border-radius: 23px;
+    width: 100%;
+}
+
+.mission-3 img{
+    width: 100%;
+    max-width: 380px;
+    border-radius: 27px;
+    height: auto;
+    object-fit: cover;
+}
+
+.mission-card-2 span{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-family: font-3;
+}
+
+.mission-card-2 p{
+    font-family: font-1;
+    font-size: 14px;
+    color: #FFFFFF;
+    max-width: 330px;
+    line-height: 25px;
+}
+
+.Who-section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 40px;
+}
+
+.Who-section span{
+    font-family: font-3;
+    font-size: clamp(1.8rem, 3vw + 1rem, 2.7rem);
+}
+
+.two-para{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 680px;
+    color: #000000cc;
+}
+
+.two-para p {
+    font-family: font-1;
+    font-size: 15px;
+}
+
+/* Tablet: mission cards stack */
+@media (max-width: 900px){
+    .under-mission{
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .mission-1,
+    .mission-2,
+    .mission-3{
+        width: 100%;
+    }
+
+    .mission-1 img,
+    .mission-3 img{
+        max-width: 100%;
+    }
+
+    .mission-2{
+        justify-content: stretch;
+    }
+
+    .mission-2 img{
+        max-width: 100%;
+        height: 340px;
+    }
+
+    .Who-section{
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .two-para{
+        max-width: 100%;
+        gap: 24px;
+    }
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 480px){
+    .Our-Mission{
+        padding: 0 20px;
+    }
+
+    .Who-section{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .mission-card,
+    .mission-card-2{
+        padding: 24px 20px;
+    }
+
+    .mission-card p,
+    .mission-card-2 p{
+        max-width: 100%;
+    }
+}

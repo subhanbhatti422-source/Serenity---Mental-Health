@@ -1,0 +1,133 @@
+.testimonial-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+    /* background-color: #FDF3EA; */
+    overflow: hidden;
+}
+
+.testimonial-badge{
+    display: inline-block;
+    margin-left: 60px;  
+      background-color: #F0D0C5;
+    
+    font-family: font-1;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.testimonial-title{
+    font-family: font-3;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 120px;
+    padding: 0 60px;
+}
+
+.testimonial-track-wrap{
+    width: 100%;
+    /* overflow: hidden; */
+}
+.testimonial-pin{
+     position: absolute;
+    top: -12px;
+    right: 31px;
+    width: 16px;
+    /* height: 16px; */
+    /* border-radius: 50%; */
+    /* box-shadow: 0 10px 0 -6px rgba(0, 0, 0, 0.25); */
+}
+
+
+.testimonial-track{
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    animation: scroll-left 30s linear infinite;
+}
+
+.testimonial-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.testimonial-card{
+    position: relative;
+    flex: 0 0 300px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 50px 23px 47px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-card:nth-child(odd){
+    transform: rotate(-2deg);
+}
+
+.testimonial-card:nth-child(even){
+    transform: rotate(2deg);
+}
+
+
+
+
+
+.testimonial-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.testimonial-avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-name{
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    font-family: font-1;
+    color: #e8744ad8;
+}
+
+.testimonial-text{
+    font-size: 16px;
+    font-family: font-3;
+    line-height: 1.6;
+    color: #0a0a0ac5;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width: 900px){
+    .testimonial-title{
+        font-size: 26px;
+        padding: 0 24px;
+    }
+
+    .testimonial-badge{
+        margin-left: 24px;
+    }
+
+    .testimonial-card{
+        flex: 0 0 260px;
+    }
+}

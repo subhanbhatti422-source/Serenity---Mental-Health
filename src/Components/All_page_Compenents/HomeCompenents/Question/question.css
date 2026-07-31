@@ -1,0 +1,209 @@
+.services-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #FCFAF7;
+}
+
+.span-p-btn{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.span-p-btn span{
+    font-size: clamp(2rem, 4vw + 1rem, 53px);
+}
+
+.p-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.p-btn p{
+    font-family: font-1;
+    color: #8D6959;
+    font-size: 17px;
+    max-width: 400px;
+}
+
+.Individual-row, .Couples-row, .Family-row, .Youth-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    padding: 60px 40px;
+    border-top: 1px solid #e4dcd3;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+.Youth-row{
+    border-bottom: 1px solid #e4dcd3;
+}
+
+.img-text{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.img-text img{
+    height: 25px;
+    width: auto;
+}
+
+.img-text h1{
+    font-family: font-3;
+    font-weight: 500;
+    font-size: 1.8rem;
+    max-width: 270px;
+}
+
+.Individual-row p,
+.Couples-row p,
+.Family-row p,
+.Youth-row p{
+    font-family: font-1;
+    color: #8D6959;
+    font-size: 15px;
+    max-width: 780px;
+    flex: 1;
+    margin-right: 230px;
+}
+
+.icon{
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(243, 237, 237, 0.945);
+    display: flex;
+    transition: all 0.5s ease;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Hover properties */
+.Individual-row:hover{
+    background-color: #F9F3ED;
+    border: none;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.Couples-row:hover{
+    background-color: #F9F3ED;
+    border: none;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.Family-row:hover{
+    background-color: #F9F3ED;
+    border: none;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.Youth-row:hover{
+    background-color: #F9F3ED;
+    border: none;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.Individual-row:hover .icon{
+    transform: rotate(43deg);
+    background-color: #f3de8a;
+}
+
+.Couples-row:hover .icon{
+    transform: rotate(43deg);
+    background-color: #f3de8a;
+}
+.Family-row:hover .icon{
+    transform: rotate(43deg);
+    background-color: #f3de8a;
+}
+.Youth-row:hover .icon{
+    transform: rotate(43deg);
+    background-color: #f3de8a;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .Individual-row p,
+    .Couples-row p,
+    .Family-row p,
+    .Youth-row p{
+        margin-right: 60px;
+        max-width: 420px;
+    }
+}
+
+/* Small tablet: rows start stacking */
+@media (max-width: 850px) {
+    .span-p-btn{
+        padding: 70px 24px 40px;
+    }
+
+    .p-btn{
+        align-items: flex-start;
+    }
+
+    .Individual-row, .Couples-row, .Family-row, .Youth-row{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 24px;
+        gap: 16px;
+    }
+
+    .img-text{
+        width: 100%;
+    }
+
+    .img-text h1{
+        max-width: 100%;
+    }
+
+    .Individual-row p,
+    .Couples-row p,
+    .Family-row p,
+    .Youth-row p{
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .icon{
+        align-self: flex-end;
+    }
+
+    /* scale transform ajeeb lagta hai stacked column pe, mobile ke liye subtle rakha */
+    .Individual-row:hover,
+    .Couples-row:hover,
+    .Family-row:hover,
+    .Youth-row:hover{
+        transform: scale(1.02);
+    }
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 480px) {
+    .img-text h1{
+        font-size: 1.4rem;
+    }
+
+    .Individual-row, .Couples-row, .Family-row, .Youth-row{
+        padding: 32px 16px;
+    }
+}

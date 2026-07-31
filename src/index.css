@@ -1,0 +1,27 @@
+@font-face {
+  font-family: font-1;
+  src: url(../src/assets/Fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: font-2;
+  src: url(../src/assets/Fonts/Castoro-Italic.ttf);
+}
+
+@font-face {
+  font-family: font-3;
+  src: url(../src/assets/Fonts/Castoro-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #FCFAF7;
+}

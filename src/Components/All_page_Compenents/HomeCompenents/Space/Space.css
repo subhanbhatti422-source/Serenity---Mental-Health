@@ -1,0 +1,296 @@
+.Space-to-Talk{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 40px;
+    min-height: 90vh;
+    margin-top: 50px;
+}
+
+.left-layout{
+    background: #f2e7dd;
+    border-radius: 24px;
+    padding: 16px;
+}
+
+.img-wrap{
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.img-wrap img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.arrow-circle{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.all-btn{
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    right: 16px;
+}
+
+.Heal-btn, .Renew-btn{
+    background: rgba(104, 25, 25, 0.295);
+    backdrop-filter: blur(1px);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-family: font-1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.heal-icon{
+    height: 16px;
+    width: auto;
+}
+
+.left-layout h3{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: font-3;
+    font-weight: 600;
+    color: #000000b0;
+}
+
+.left-layout p{
+    color: #8d6959c2;
+    font-size: 16px;
+    font-family: font-1;
+    margin-top: 6px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.middle-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.heading-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-block h1{
+    font-family: font-2;
+    font-weight: 300;
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+}
+
+.heading-block p{
+    color: #8d6959c2;
+    margin-top: 8px;
+    font-family: font-1;
+    font-size: 17px;
+}
+
+.stats-card{
+    background-image: url('../../../../assets/Img/Space-to-Talk-img3.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    padding: 24px;
+    color: #fff;
+    flex: 1;
+}
+
+.top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-circle{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.badge{
+    background: #fff;
+    color: #4622229f;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-family: font-1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.percent-row h2{
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    font-family: font-1;
+    margin-top: 30px;
+}
+
+.counselors-text{
+    font-weight: 600;
+    margin-top: 4px;
+    font-family: font-1;
+}
+
+.desc-text{
+    font-size: 16px;
+    font-family: font-1;
+    opacity: 0.9;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+.carousel-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.progress-bar{
+    flex: 1;
+    height: 3px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress-bar span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.right-layout{
+    background: #F8F3EC;
+    border-radius: 24px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-layout h3{
+    font-size: clamp(1.4rem, 2vw + 1rem, 1.875rem);
+    font-weight: 600;
+    font-family: font-1;
+}
+
+.right-layout > p{
+    color: #8d6959c2;
+    font-size: 15px;
+    font-family: font-1;
+    margin-top: 6px;
+    max-width: 60%;
+}
+
+.stat-block{
+    margin-top: 24px;
+}
+
+.stat-block h4{
+    font-size: 29px;
+    font-family: font-2;
+    font-weight: 600;
+    color: #291d1ddc;
+}
+
+.stat-block p{
+    color: #976e5dd2;
+    font-size: 16px;
+    font-family: font-1;
+}
+
+.person-img{
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    width: 85%;
+    object-fit: cover;
+}
+
+/* Tablet: 3 columns → 2 columns (right card drops below) */
+@media (max-width: 1100px) {
+    .Space-to-Talk{
+        grid-template-columns: 1fr 1fr;
+        min-height: auto;
+    }
+    .right-layout{
+        grid-column: 1 / -1;
+    }
+    .right-layout > p{
+        max-width: 100%;
+    }
+    .person-img{
+        position: static;
+        width: 60%;
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+/* Small tablet: everything stacks */
+@media (max-width: 768px) {
+    .Space-to-Talk{
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+    .img-wrap img{
+        height: 320px;
+    }
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 480px) {
+    .Space-to-Talk{
+        padding: 24px 16px;
+        gap: 16px;
+    }
+    .Heal-btn, .Renew-btn{
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    .stat-block h4{
+        font-size: 24px;
+    }
+    .right-layout > p{
+        max-width: 100%;
+    }
+}

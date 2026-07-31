@@ -1,0 +1,93 @@
+.two-section {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.img-text img {
+    height: 30px;
+    width: auto;
+}
+
+.img-text span {
+    font-family: font-3;
+    font-size: 1.8rem;
+}
+
+.Connect-With {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    flex: 1;
+    min-width: 260px;
+}
+
+.Connect-With p {
+    font-family: font-1;
+    font-size: 16px;
+    max-width: 440px;
+    line-height: 25px;
+    color: #8d6959;
+    padding-top: 5px;
+}
+
+.Connect-With a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: font-1;
+}
+
+.Help {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    flex: 1;
+    min-width: 260px;
+}
+
+.Help p {
+    font-family: font-1;
+    font-size: 16px;
+    max-width: 440px;
+    line-height: 25px;
+    color: #8d6959;
+    padding-top: 5px;
+}
+
+.Help a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: font-1;
+}
+
+@media (max-width: 700px){
+    .two-section {
+        flex-direction: column;
+        gap: 36px;
+        padding: 50px 20px 0;
+    }
+
+    .Connect-With p,
+    .Help p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .two-section {
+        padding: 40px 20px 0;
+    }
+
+    .img-text span {
+        font-size: 1.5rem;
+    }
+}
