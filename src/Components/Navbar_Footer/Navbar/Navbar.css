@@ -43,7 +43,6 @@
     width: 100%;
 }
 
-/* Desktop button visible, mobile-panel button hidden */
 .desktop-btn{
     display: block;
 }
@@ -51,8 +50,6 @@
 .mobile-btn{
     display: none;
 }
-
-/* Hamburger button — hidden on desktop by default */
 .hamburger-btn{
     display: none;
     background: none;
@@ -62,7 +59,7 @@
     z-index: 110;
 }
 
-/* Tablet & Mobile */
+
 @media (max-width: 968px){
 
     .Navbar{
@@ -75,12 +72,15 @@
         justify-content: center;
     }
 
-   
+    .desktop-btn{
+        display: none;
+    }
 
     .btn-icon{
         display: flex;
         align-items: center;
         gap: 15px;
+        /* display: none; */
     }
 
     .ul{
